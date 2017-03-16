@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link href="//cdn.bootcss.com/Swiper/3.4.2/css/swiper.css" rel="stylesheet">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+    }
+    #box{
+    	width:500px;
+    	height:500px ;
+    	background: rgba(250,250,250,0.5);
+    	position: absolute;
+    	top: 200px;
+    	left: 500px;
+    	z-index: 10;
+    	border-radius: 30px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(image/1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(image/2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(image/3.jpg)"></div>
+        </div>
+        <div id="box"></div>
+    </div>
+    <script src="//cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        spaceBetween: 30,
+        autoplay : 3000,
+        speed : 2000,
+        effect: 'fade'
+    });
+    </script>
+</body>
+</html>
