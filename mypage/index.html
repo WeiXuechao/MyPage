@@ -11,37 +11,64 @@
 
     <!-- Demo styles -->
     <style>
-    html, body {
-        position: relative;
-        height: 100%;
-    }
-    body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-    .swiper-slide {
-        background-position: center;
-        background-size: cover;
-    }
-    #box{
-    	width:500px;
-    	height:500px ;
-    	background: rgba(250,250,250,0.5);
-    	position: absolute;
-    	top: 200px;
-    	left: 500px;
-    	z-index: 10;
-    	border-radius: 30px;
-    }
+    	*{margin: 0;padding: 0;list-style: none;}
+	    html, body {
+	        position: relative;
+	        height: 100%;
+	    }
+	    body {
+	        background: #eee;
+	        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	        font-size: 14px;
+	        color:#000;
+	        margin: 0;
+	        padding: 0;
+	    }
+	    .swiper-container {
+	        width: 100%;
+	        height: 100%;
+	        position: relative;
+	    }
+	    .swiper-slide {
+	        background-position: center;
+	        background-size: cover;
+	    }
+	    #box{
+	    	width:400px;
+	    	height:400px ;
+	    	background: rgba(250,250,250,0.5);
+	    	position: absolute;
+	    	top: 50%;
+	    	margin-top: -200px;
+	    	left: 50%;
+	    	margin-left: -200px;
+	    	z-index: 10;
+	    	border-radius: 30px;
+	    }
+	    #box p{
+	    	font-size: 22px;
+	    	line-height: 60px;
+	    	padding-left: 20px;
+	    }
+	    #box ul{
+	    	width: 100%;
+	    	height: 100%;
+	    }
+	    #box ul li{
+	    	font-size: 18px;
+			line-height: 60px;
+	    }
+	     #box ul li a{
+	     	padding-left: 20px;
+	     	text-decoration: none;
+	     	color: #000;
+	     }
+	     #box ul li span{
+	     	text-align: right;
+	     	width: 100px;
+	     	display: inline-block;
+	     }
+  
     </style>
 </head>
 <body>
@@ -52,7 +79,14 @@
             <div class="swiper-slide" style="background-image:url(image/2.jpg)"></div>
             <div class="swiper-slide" style="background-image:url(image/3.jpg)"></div>
         </div>
-        <div id="box"></div>
+        <div id="box">
+        	<p>我的主页</p>
+        	<ul>
+        		<li><span>Github:</span><a href="https://github.com/WeiXuechao" target="_blank">@WeiXuechao</a></li>
+        		<li><span>技术博客:</span><a href="http://www.cnblogs.com/weixuechao/" target="_blank">时光是影子的心< </a></li>
+        		<li><span>我的邮箱:</span><a href="https://mail.qq.com/cgi-bin/frame_html?sid=MtMoccz1ExvQMnAo&r=3dc924ed2998f52b812d8d1cf44b0304" target="_blank">QQ邮箱</a></li>
+        	</ul>
+        </div>
     </div>
     <script src="//cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
     <script>
